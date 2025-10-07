@@ -1,22 +1,149 @@
 public class Array_in_Java {
     public static void main(String[] args) {
-        // now lets do theory and practical questions like we did for all topics
+        
+        // // 1D Array (Single Dimensional)
+        // // Declare first, assign later
 
+        // int [] numbers;      // Declaration
+        // numbers = new int[5];   // Allocate space for 5 integers
+
+        // numbers[0] = 10;
+        // numbers[1] = 20;
+        // numbers[2] = 30;
+        // numbers[3] = 40;
+        // numbers[4] = 50;
+
+        // System.out.println(numbers[3]);     // 40
+        // numbers[3] = 80;
+        // System.out.println(numbers[3]);     // 80
+
+
+
+
+        // // Loop through 1D array
+
+        // int [] arr = {5, 10, 15, 20, 25};
+
+        // // Using for loop
+        // for (int i = 0; i < arr.length; i++) {
+        //     System.out.println(arr[i]);
+        // }
+
+        // System.out.println();
+
+        // // Using enhanced for loop
+        // for (int num : arr) {
+        //     System.out.println(num);
+        // }
+
+
+
+
+
+
+
+
+
+
+
+
+        // // Declare and allocate size at the same time
+
+        // int [] numbers = new int [5];
+
+
+
+
+
+
+
+        // // Declare and initialize with values
+
+        // int [] numbers = {10, 20, 30, 40, 50};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // // 2D Array (Two Dimensional)
+        // // A 2D array is like a matrix → rows × columns.
+        // // Declare first, assign later
+
+        // int [] [] matrix;         // Declaration
+        // matrix = new int[3][3];     // Allocate 3 rows * 3 columns
+
+        // matrix[0][0] = 1;
+        // matrix[0][1] = 2;
+        // matrix[0][2] = 3;
+        // matrix[1][0] = 4;
+        // matrix[1][1] = 5;
+        // matrix[1][2] = 6;
+        // matrix[2][0] = 7;
+        // matrix[2][1] = 8;
+        // matrix[2][2] = 9;
+
+        // System.out.println(matrix[1][2]);    // 6    (2nd row, 3rd column)
+        // matrix[0][0] = 10;        // Update first element
+        // System.out.println(matrix[0][0]);   // 10  
+
+
+
+
+
+
+
+        // // Declare and allocate size together
+
+        // int [][] matrix = new int [3][3];
+
+
+
+
+
+        // Declare and initialize directly
+
+        int [][] matrix = {
+            {1, 2, 3},
+            {4, 5, 6},
+            {7, 8, 9}
+        };
+
+        // Loop through 2D array
+
+        // Using nested for loop 
+
+        for (int i = 0; i < matrix.length; i++) {         // Outer loop → goes through rows
+            for (int j = 0; j < matrix[i].length; j++) {            // Inner loop → goes through columns of row 
+                System.out.print(matrix[i][j] + " ");
+            }                                                   
+            System.out.println();                // move to next line after printing one row
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
