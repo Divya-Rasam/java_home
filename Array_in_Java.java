@@ -129,6 +129,9 @@ public class Array_in_Java {
         }
 
 
+        System.out.println("Matrix length " + matrix.length);              // number of rows in 2D array
+
+        System.out.println("number of columns in row i = " + matrix[1].length);                     // number of columns in row i
 
 
 
@@ -136,6 +139,80 @@ public class Array_in_Java {
 
 
 
+
+
+
+        int[][] mat = {
+            {1, 2},
+            {3, 4, 5},
+            {6}
+        };
+
+
+        System.out.println("Matrix length " + mat.length); 
+        System.out.println("Mat[0] length " + mat[0].length);   
+        System.out.println("Mat[1] length " + mat[1].length);  
+        System.out.println("Mat[2] length " + mat[2].length);  
+
+        // mat.length = 3           // 3 rows
+        // mat[0].length = 2        // 2 elements in first row
+        // mat[1].length = 3        // 3 elements in second row
+        // mat[2].length = 1        // 1 element in third row
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // Create and print a 1D array of 5 integers.
+
+
+        // int [] array = new int [5];
+
+        int [] array = {1, 2, 3, 4, 5};
+
+        for ( int i = 0; i < array.length; i++) {
+            System.out.print(array[i] + " ");
+        }
+
+
+
+
+        System.out.println();
+
+
+
+
+        // Find the sum of all elements in a 1D array.
+
+        int sum = 0;
+
+        for ( int i = 0; i < array.length; i++) {
+            sum += array[i];
+        }
+
+        System.out.println("Sum of all elements is " + sum);
+
+
+
+
+
+        // Create a 2D array (3x3) and print all elements using nested for loops.
 
 
 
@@ -144,6 +221,204 @@ public class Array_in_Java {
         
     }
 }
+
+
+
+
+// 🔹 Part A – Quick Theory (Sentence-style)
+
+// Answer in your own words — short & simple.
+
+// What is an array in Java?
+// array is a set of same data types elements.
+
+// What are the two main types of arrays in Java?
+// 1 d array and 2 d array
+
+// Can an array hold elements of different data types? Why or why not?
+// no an array cant hold different data types because (i dont know thw reason please explain me in easy words) i think maybe while acccesing then it will get an error if there are multiple data types
+
+// What does arr.length return?
+// arr.length returns the length of that particular array
+
+// What is the index of the first element in an array?
+// 0
+
+// What will happen if you try to access an invalid index (like arr[10] when size is 5)?
+// it will give error
+
+// What is the difference between a 1D and 2D array?
+// one d array is just a single array, 2d array has rows and colums like a matrix
+
+// What does matrix.length give?
+// it will give the length of the rows of the matrix array if it is a 2d array
+
+// What does matrix[i].length give?
+// it will give the length of the columm of the row with index i
+
+// Can arrays have different row lengths in 2D arrays? If yes, how?
+// yes it can have, like in one row there can be 2 columns in 2nd row there can be 4 in 3rd there can be 7 and etc , 
+
+// 🔹 Part B – Code Practice
+
+// Write small Java programs (or explain what happens):
+
+        // // Create and print a 1D array of 5 integers.
+
+
+        // // int [] array = new int [5];
+
+        // int [] array = {1, 2, 3, 4, 5};
+
+        // for ( int i = 0; i < array.length; i++) {
+        //     System.out.print(array[i] + " ");
+        // }
+
+
+        //         // Find the sum of all elements in a 1D array.
+
+        // int sum = 0;
+
+        // for ( int i = 0; i < array.length; i++) {
+        //     sum += array[i];
+        // }
+
+        // System.out.println("Sum of all elements is " + sum);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
