@@ -210,9 +210,56 @@ public class Array_in_Java {
 
 
 
+        System.out.println();
 
 
         // Create a 2D array (3x3) and print all elements using nested for loops.
+
+        int [][] array2d = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}}; 
+
+        for ( int i = 0; i < array2d.length; i++) {
+            for (int j = 0; j < array2d[i].length; j++) {
+                System.out.print(array2d[i][j] + " ");
+            }
+            System.out.println();
+        }
+
+
+        System.out.println();
+
+
+        // Print only the diagonal elements of a 2D array.
+
+        for ( int i = 0; i < array2d.length; i++) {
+            for (int j = 0; j < array2d[i].length; j++) {
+                if (i == j || i + j == array2d.length-1) {
+                    System.out.print(array2d[i][j] + " ");
+                }
+            }
+        }
+
+
+System.out.println();
+System.out.println();
+
+
+
+        // Create an uneven 2D array (example: first row has 2 items, second has 3, third has 1) and print all elements.
+
+        int [][] unevenArray = {{1, 2}, {3, 4, 5}, {6}};
+
+        for (int i = 0; i < unevenArray.length; i++) {
+            for (int j = 0; j < unevenArray[i].length; j++) {
+                System.out.print(unevenArray[i][j] + " ");
+            }
+            System.out.println();
+        }
+
+
+
+
+
+
 
 
 
@@ -263,32 +310,63 @@ public class Array_in_Java {
 
 // Write small Java programs (or explain what happens):
 
-        // // Create and print a 1D array of 5 integers.
+//         // Create and print a 1D array of 5 integers.
 
 
-        // // int [] array = new int [5];
+//         // int [] array = new int [5];
 
-        // int [] array = {1, 2, 3, 4, 5};
+//         int [] array = {1, 2, 3, 4, 5};
 
-        // for ( int i = 0; i < array.length; i++) {
-        //     System.out.print(array[i] + " ");
-        // }
-
-
-        //         // Find the sum of all elements in a 1D array.
-
-        // int sum = 0;
-
-        // for ( int i = 0; i < array.length; i++) {
-        //     sum += array[i];
-        // }
-
-        // System.out.println("Sum of all elements is " + sum);
+//         for ( int i = 0; i < array.length; i++) {
+//             System.out.print(array[i] + " ");
+//         }
 
 
+//                 // Find the sum of all elements in a 1D array.
+
+//         int sum = 0;
+
+//         for ( int i = 0; i < array.length; i++) {
+//             sum += array[i];
+//         }
+
+//         System.out.println("Sum of all elements is " + sum);
 
 
 
+//         Create a 2D array (3x3) and print all elements using nested for loops.
+
+//         int [][] array2d = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}}; 
+
+//         for ( int i = 0; i < array2d.length; i++) {
+//             for (int j = 0; j < array2d[i].length; j++) {
+//                 System.out.print(array2d[i][j] + " ");
+//             }
+//             System.out.println();
+//         }
+
+
+//         Print only the diagonal elements of a 2D array.
+
+//         for ( int i = 0; i < array2d.length; i++) {
+//             for (int j = 0; j < array2d[i].length; j++) {
+//                 if (i == j || i + j == array2d.length-1) {
+//                     System.out.print(array2d[i][j] + " ");
+//                 }
+//             }
+//         }
+
+
+//         Create an uneven 2D array (example: first row has 2 items, second has 3, third has 1) and print all elements.
+
+//         int [][] unevenArray = {{1, 2}, {3, 4, 5}, {6}};
+
+//         for (int i = 0; i < unevenArray.length; i++) {
+//             for (int j = 0; j < unevenArray[i].length; j++) {
+//                 System.out.print(unevenArray[i][j] + " ");
+//             }
+//             System.out.println();
+//         }
 
 
 

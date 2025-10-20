@@ -1,6 +1,7 @@
 public class Labeled_Break_Continue {
     public static void main(String[] args) {
 
+        // 1. Labeled Break
 
         outerLoop:           // This is the label for outer loop
         for (int i = 1; i <= 3; i++) {
@@ -11,11 +12,22 @@ public class Labeled_Break_Continue {
                 System.out.println(i + " " + j);
             }
         }
+
         System.out.println("Loop ended");
 
 
 
+        System.out.println();
 
+
+
+
+
+
+
+
+
+        //  2. Labeled Continue
 
         outerLoop: 
         for (int i = 1; i <= 3; i++) {
@@ -94,3 +106,55 @@ public class Labeled_Break_Continue {
 
 
 // ✅ In short: Label = name of loop, break/continue + label = act on that specific loop instead of the closest one.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Main difference between normal break and labeled break ✅
+// Your answer is mostly correct. A small clarification:
+// A normal break exits only the nearest loop.
+// A labeled break allows you to exit a specific outer loop, not just the inner one.
+// Minor note: The label is always for the outer loop, not the inner loop itself. Using a labeled break inside a single loop is possible, but it behaves like a normal break (so your answer for Q2 touches this).
+
+
+
+// Can a labeled break be used inside a single loop? ✅
+// Yes, technically you can put a label, but it behaves the same as a normal break because there’s no outer loop to affect. So your intuition was correct.
+
+
+
+// What happens when a labeled continue is used inside an inner loop? ⚠️
+// Slight correction: A labeled continue skips the current iteration of the labeled outer loop, not both loops.
+// The inner loop stops the current iteration, and the outer loop moves to its next iteration.
+// It does not skip both loops entirely.
+
+
+
+// True/False question ✅
+// Correct. Without a label, continue cannot affect the outer loop from inside a nested loop.
+
+
+// Why are labeled break/continue useful? ✅
+// Exactly. They are helpful when you want to control outer loops from inside nested loops.
+
+
+
+// Main thing to remember:
+// Labeled break → exit outer loop.
+// Labeled continue → skip current iteration of outer loop.
