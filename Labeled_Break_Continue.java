@@ -42,6 +42,117 @@ public class Labeled_Break_Continue {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+System.out.println();
+System.out.println();
+
+    //         Exercise 1 – Labeled Break
+    // Write a program to find the first pair of numbers (i, j) in nested loops (1 to 5) whose product is 6, and stop all loops 
+    // immediately when found. Print the pair.
+
+        outerLoop:
+        for ( int i = 1; i < 6; i++ ) {
+            for ( int j = 1; j < 6; j++) {
+                if ( i * j == 6) {
+                    System.out.println(i + "," + j);
+                    break outerLoop;
+                } 
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+System.out.println();
+System.out.println();
+
+    //         Exercise 2 – Labeled Continue
+
+    // Write a program with nested loops: i = 1 to 3, j = 1 to 3.
+    // Skip the current iteration of the outer loop whenever i == j.
+    // Print all other pairs (i, j).
+
+    outerLoop:
+    for ( int i = 1; i < 4; i++) {
+        for ( int j = 1; j < 4; j++ ) {
+            if ( i == j ) {
+                continue outerLoop;
+            }
+            System.out.println(i + "," + j);
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+System.out.println();
+System.out.println();
+
+    //     Exercise 3 – Combination
+
+    // Loop i = 1 to 4 (outer) and j = 1 to 4 (inner).
+    // If i + j == 5, skip that iteration of outer loop using a labeled continue.
+    // Otherwise, print i and j.
+
+    outerLoop:
+    for ( int i = 1; i < 5; i++ ) {
+        for ( int j = 1; j < 5; j++) {
+            if ( i + j == 5 ) {
+                continue outerLoop;
+            }
+            System.out.println( i + "," + j );
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
 }
 
